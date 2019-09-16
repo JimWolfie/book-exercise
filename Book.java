@@ -22,7 +22,7 @@ class Book
         title = bookTitle;
     }
     /**
-     * 
+     *  Accessor for author 
      */
 
     public String getAuthor()
@@ -30,10 +30,29 @@ class Book
         return author;
     }
     /**
-     * 
+     *  accessor for title 
      */
     public String getTitle()
     {
         return title;
-    }// Add the methods here ...
+    }
+    /**
+     * public void 
+     * prints author 
+     */
+    public void printAuthor()
+    {
+        String a = getAuthor();
+        System.out.println(a);
+    }
+    /**
+     * public void 
+     * prints title
+     */
+    public void printTitle()
+    {
+        String a = getTitle();
+        System.out.println(a);
+    }
+    // Add the methods here ...
 }
