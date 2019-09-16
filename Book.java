@@ -6,12 +6,15 @@
  * @author (Insert your name here.)
  * @version (Insert today's date here.)
  */
+
 class Book
 {
      // The fields.
     private String author;
     private String title;
+    private String refNumber;
     private int pages;
+    
 
     /**
      * Set the author and title fields when this object
@@ -22,6 +25,7 @@ class Book
         author = bookAuthor;
         title = bookTitle;
         pages = bookPages;
+        refNumber = ("");
     }
     /**
      *  Accessor for author 
@@ -37,6 +41,30 @@ class Book
     public String getTitle()
     {
         return title;
+    }
+    /**
+     * accessor for reference number
+     * returns ZZZ if legth = 0
+     * else returns reference 
+     */
+    public String getRefNumber()
+    {
+        String ref;
+        String refVal= refNumber;
+        
+        if(refVal.length() == 0)
+        {
+            ref =( "ZZZ");
+        }else{
+            ref = refVal;
+        
+        }
+        return ref;
+    }
+    public void setRefNumber(String ref)
+    {
+       ref = ref.toString();
+       refNumber= ref;
     }
      /**
      *  accessor for title 
