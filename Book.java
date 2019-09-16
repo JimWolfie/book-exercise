@@ -63,5 +63,27 @@ class Book
         String a = getTitle();
         System.out.println(a);
     }
-    // Add the methods here ...
+    /**
+     * public void 
+     * prints pages as string
+     */
+    public void printPages()
+    {
+        int a = getPages();
+        System.out.println(Integer.toString(a));
+    }
+    /**
+     * public void 
+     * calls each function to print formating of book
+     */
+    public void printDetails()
+    {
+        System.out.println("\n title");
+        printTitle();
+        System.out.println("\n author");
+        printAuthor();
+        System.out.println("\n # of pages");
+        printPages();
+        
+    }// Add the methods here ...
 }
