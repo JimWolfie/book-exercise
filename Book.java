@@ -46,6 +46,8 @@ class Book
      * accessor for reference number
      * returns ZZZ if legth = 0
      * else returns reference 
+     * zzz means no reference set. Reference setting has check 
+     * for correct length built in
      */
     public String getRefNumber()
     {
@@ -61,10 +63,18 @@ class Book
         }
         return ref;
     }
-    public void setRefNumber(String ref)
+    /**
+     * sets reference number for book
+     */
+    public void setRefNumber(String refNumber)
     {
-       ref = ref.toString();
-       refNumber= ref;
+       if(refNumber.length() < 3)
+       {
+            System.out.println("Error, refNumber must be at least 3 characters");
+       }else{
+            this.refNumber = refNumber.toString();
+       }
+       
     }
      /**
      *  accessor for title 
