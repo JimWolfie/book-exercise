@@ -1,6 +1,6 @@
 /**
  *Author: Nicholas Lindgren
- *Github:
+ *Github: https://github.com/JimWolfie/book-exercise
  *Book class Exercises 2.83 - 2.92
  *constructs a book object and then implements accessors and mutators
  *holds author, title, reference number, pages, # of borrows and checks if 
