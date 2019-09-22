@@ -1,10 +1,10 @@
 /**
- * A class that maintains information on a book.
- * This might form part of a larger application such
- * as a library system, for instance.
- *
- * @author (Insert your name here.)
- * @version (Insert today's date here.)
+ *Author: Nicholas Lindgren
+ *Github:
+ *Book class Exercises 2.83 - 2.92
+ *constructs a book object and then implements accessors and mutators
+ *holds author, title, reference number, pages, # of borrows and checks if 
+ *course text for a class
  */
 
 class Book
