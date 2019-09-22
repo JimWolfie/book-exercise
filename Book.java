@@ -15,18 +15,22 @@ class Book
     private String refNumber;
     private int pages;
     private int borrowed;
+    public final boolean courseText; 
     
 
     /**
      * public Constructor 
-     * Author, title, and pages fields are arguments on construction
+     * Author, title,pages, and courseTxt fields are arguments on construction
      * refNumber and borrowed counts are defaulted to "" and 0
+     * courseTxt is public final to mimic the function of 
+     * c#'s read only. 2.92 wanted this to be immutable
      */
-    public Book(String author, String title, int pages)
+    public Book(String author, String title, int pages, boolean courseText)
     {
         this.author = author;
         this.title = title;
         this.pages = pages;
+        this.courseText = courseText;
         refNumber = ("");
         borrowed = 0;
         
@@ -98,6 +102,10 @@ class Book
     {
         return this.borrowed;
     
+    }
+    public boolean isCourseText()
+    {
+        return this.courseText;
     }
     /**
      * public void
